@@ -2,7 +2,7 @@ on:
   push:
     branches: [ master ]
 env:
-  AZURE_WEBAPP_NAME: ak-static-app
+  AZURE_WEBAPP_NAME: test-runfrompkg
   AZURE_WEBAPP_PACKAGE_PATH: '.'   
 jobs:
   build-and-deploy:
@@ -15,4 +15,4 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     
     - run: |
-        az webapp up --location westeurope --name ak-static-app --html
+        az webapp up --location westeurope --name test-runfrompkg --html

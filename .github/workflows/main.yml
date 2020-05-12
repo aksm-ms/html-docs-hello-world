@@ -2,7 +2,7 @@ on:
   push:
     branches: [ master ]
 env:
-  AZURE_WEBAPP_NAME: ak-static-app    # set this to your application's name
+  AZURE_WEBAPP_NAME: ak-static-app
   AZURE_WEBAPP_PACKAGE_PATH: '.'   
 jobs:
   build-and-deploy:
